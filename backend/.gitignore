@@ -16,3 +16,7 @@ Thumbs.db
 
 # Logs
 *.log
+
+   dist/
+   src/generated/
+   node_modules/

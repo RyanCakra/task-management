@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
-import { registerUser, loginUser } from './auth.service';
-import { sendSuccess, sendError } from '../../utils/response';
+import { registerUser, loginUser } from './auth.service.js';
+import { sendSuccess, sendError } from '../../utils/response.js';
 
 export const register = async (req: Request, res: Response): Promise<void> => {
   try {

@@ -1,8 +1,8 @@
 import { Response } from 'express';
-import { AuthRequest } from '../../types';
-import { sendSuccess, sendError } from '../../utils/response';
-import * as taskService from './task.service';
-import { TaskStatus } from '../../generated/client';
+import { AuthRequest } from '../../types/index.js';
+import { sendSuccess, sendError } from '../../utils/response.js';
+import * as taskService from './task.service.js';
+import { TaskStatus } from '../../generated/client.js';
 
 export const getTasks = async (req: AuthRequest, res: Response): Promise<void> => {
   try {
