@@ -2,7 +2,7 @@ import { Response } from 'express';
 import { AuthRequest } from '../../types';
 import { sendSuccess, sendError } from '../../utils/response';
 import * as taskService from './task.service';
-import { TaskStatus } from '@prisma/client';
+import { TaskStatus } from '../../generated/client';
 
 export const getTasks = async (req: AuthRequest, res: Response): Promise<void> => {
   try {
