@@ -1,5 +1,5 @@
 import { prisma } from '../../config/database';
-import { TaskStatus } from '@prisma/client';
+import { TaskStatus } from '../../generated/client';
 
 export const getUserTasks = async (userId: number) => {
   return prisma.task.findMany({
